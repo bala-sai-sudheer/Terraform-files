@@ -85,6 +85,7 @@ resource "aws_nat_gateway" "nat" {
   depends_on = [aws_internet_gateway.igw]
 }
 
+#VPC-NATgateway-Elastc_IP creation
 resource "aws_eip" "nat_eip" {
   domain = "vpc"
 }
